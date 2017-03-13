@@ -29,6 +29,17 @@ var handlers = {
 			self.emit(':tellWithCard', speech, '/r/showerthoughts', data)
 		})
 	},
+	'GetDeveloperInfoIntent': function() {	
+		console.log('Emitting request for GetDeveloperInfo');
+		this.emit('GetDeveloperInfo')
+	},
+	'GetDeveloperInfo': function () {
+		console.log('Building info to be emitted');
+		var info = ['I was developed by the budding programmer Alex Loren', 'My creator is the aspiring developer Alex Loren', 'I was designed by Alex Loren']
+		var rnd = Math.floor((Math.random() * info.length))
+		var speech = info[rnd]
+		self.emit(':tellWithCard', speech, '/r/showerthoughts', speech)
+	},
 	'AMAZON.HelpIntent': function() {
 		console.log('Building help prompt to be emitted')
 		var help = 'You can say tell me something, or, you can say exit... What can I help you with?'

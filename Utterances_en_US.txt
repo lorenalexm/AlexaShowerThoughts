@@ -8,3 +8,17 @@ GetNewShowerThoughtIntent give me your thoughts
 GetNewShowerThoughtIntent give me some thoughts
 GetNewShowerThoughtIntent tell me something
 GetNewShowerThoughtIntent give me something
+GetDeveloperInfoIntent who made you
+GetDeveloperInfoIntent who designed you
+GetDeveloperInfoIntent who developed you
+GetDeveloperInfoIntent who programmed you
+GetDeveloperInfoIntent tell me who made you
+GetDeveloperInfoIntent tell me who designed you
+GetDeveloperInfoIntent tell me who developed you
+GetDeveloperInfoIntent tell me who programmed you
+GetDeveloperInfoIntent who is your designer
+GetDeveloperInfoIntent who is your developer
+GetDeveloperInfoIntent who is your programmer
+GetDeveloperInfoIntent tell me who is your designer
+GetDeveloperInfoIntent tell me who is your developer
+GetDeveloperInfoIntent tell me who is your programmer

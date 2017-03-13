@@ -4,6 +4,9 @@
 			"intent": "GetNewShowerThoughtIntent"
 		},
 		{
+			"intent": "GetDeveloperInfoIntent"
+		},
+		{
 			"intent": "AMAZON.HelpIntent"
 		},
 		{
