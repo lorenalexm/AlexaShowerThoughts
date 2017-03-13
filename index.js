@@ -22,10 +22,11 @@ var handlers = {
 	},
 	'GetShowerThought': function () {
 		console.log('Requesting title of thought');
+		var self = this
 		getThoughtTitle(function(data) {
 			console.log('Building speech to be emitted')
 			var speech = 'Here is your shower thought: ' + data
-			this.emit(':tellWithCard', speech, '/r/showerthoughts', data)
+			self.emit(':tellWithCard', speech, '/r/showerthoughts', data)
 		})
 	},
 	'AMAZON.HelpIntent': function() {
