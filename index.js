@@ -38,7 +38,7 @@ var handlers = {
 		var info = ['I was developed by the budding programmer Alex Loren', 'My creator is the aspiring developer Alex Loren', 'I was designed by Alex Loren']
 		var rnd = Math.floor((Math.random() * info.length))
 		var speech = info[rnd]
-		self.emit(':tellWithCard', speech, '/r/showerthoughts', speech)
+		this.emit(':tellWithCard', speech, '/r/showerthoughts', speech)
 	},
 	'AMAZON.HelpIntent': function() {
 		console.log('Building help prompt to be emitted')
