@@ -13,18 +13,23 @@ exports.handler = function(event, context, callback) {
 
 var handlers = {
 	'LaunchRequest': function() {
+		console.log('Emitting request for GetShowerThought')
 		this.emit('GetShowerThought')
 	},
 	'GetNewShowerThoughtIntent': function () {
+		console.log('Emitting request for GetShowerThought')
 		this.emit('GetShowerThought')
 	},
 	'GetShowerThought': function () {
+		console.log('Requesting title of thought');
 		getThoughtTitle(function(data) {
+			console.log('Building speech to be emitted')
 			var speech = 'Here is your shower thought: ' + data
 			this.emit(':tellWithCard', speech, '/r/showerthoughts', data)
 		})
 	},
 	'AMAZON.HelpIntent': function() {
+		console.log('Building help prompt to be emitted')
 		var help = 'You can say tell me something, or, you can say exit... What can I help you with?'
 		var prompt = 'What can I help you with?'
 		this.emit(':ask', help, prompt)
@@ -38,7 +43,9 @@ var handlers = {
 }
 
 function getThoughtTitle(callback) {
+	console.log('Attempting to pull data from Reddit')
 	reddit.subreddit('showerthoughts').hot().exec(function(res) {
+		console.log('Data successfully pulled')
 		var threads = res['data']['children']
 		var rnd = Math.floor((Math.random() * threads.length))
 		return callback(threads[rnd]['data']['title'])
