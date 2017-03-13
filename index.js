@@ -8,7 +8,7 @@ exports.handler = function(event, context, callback) {
 	var app = alexa.handler(event, context)
 	app.APP_ID = APP_ID
 	app.registerHandlers(handlers)
-	app.execute
+	app.execute()
 }
 
 var handlers = {
