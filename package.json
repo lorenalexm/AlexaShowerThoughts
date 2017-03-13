@@ -15,6 +15,7 @@
   "author": "Alex Loren",
   "license": "MIT",
   "dependencies": {
+    "alexa-sdk": "^1.0.7",
     "nraw": "^0.2.5"
   }
 }
