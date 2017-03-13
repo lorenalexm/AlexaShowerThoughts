@@ -1,0 +1,20 @@
+SHORT:
+Alexa skill to pull a random /r/showerthoughts hot topic
+
+
+LONG:
+As defined by the Urban Dictionary, a shower thought is:
+
+An idea, thought, or concept that first comes to you when you are taking your morning shower or doing some other part of your morning routine.
+
+This Alexa skill makes it easy to hear the top shower thoughts circulating Reddit's /r/showerthoughts. By simply asking your Alexa enabled device, you will be read back, at random, one of the top 25 shower thoughts currently circulating the subreddit.
+
+
+EXAMPLE PHRASES:
+Alexa ask shower thoughts to tell me a thought
+Alexa ask shower thoughts to give me something
+Alexa open shower thoughts
+
+
+KEYWORDS:
+reddit shower thoughts thought skill
