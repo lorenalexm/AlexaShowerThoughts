@@ -1,0 +1,10 @@
+GetNewShowerThoughtIntent a thought
+GetNewShowerThoughtIntent tell me a thought
+GetNewShowerThoughtIntent give me a thought
+GetNewShowerThoughtIntent tell me thoughts
+GetNewShowerThoughtIntent give me thoughts
+GetNewShowerThoughtIntent tell me your thoughts
+GetNewShowerThoughtIntent give me your thoughts
+GetNewShowerThoughtIntent give me some thoughts
+GetNewShowerThoughtIntent tell me something
+GetNewShowerThoughtIntent give me something
